@@ -6,27 +6,120 @@ body{
   background-size: cover;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: Balsamiq SansBoldItalic;
+  src: url(fonts/BalsamiqSansBoldItalic.ttf);
+
+}
+
 @font-face {
   font-family: Balsamiq Sans;
-  src: url(fonts/BalsamiqSansBoldItalic.ttf);
+  src: url(fonts/BalsamiqSansRegular.ttf);
 }
 
 span{
   text-align: center;
-  font-family: Balsamiq Sans, sans-serif;
-  font-size: 60px;
+  font-family: Balsamiq SansBoldItalic, sans-serif;
+  font-size: 73px;
   position:absolute;
   top: 88;
-  left: 360;
+  left: 570;
   color: rgb(1, 1, 1);
-  padding: 50 315 0 0;
+  padding: 50 500 0 0;
 
 }
 
 .headerBG{
-  padding: 30px 100px 0px 100px;
+  padding: 30px 300px 0px 300px;
+  width: 1300px;
+  height: 750px;
+}
+
+ul{
+  position: absolute;
+  top: 500;
+  left: 300;
 }
 
 li{
   display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-family: Balsamiq Sans, sans-serif;
+  width: 120px;
+  height: 60px;
+  padding: 25 30 0 30;
+  margin: 0 50 0 50;
+  background-color: rgb(39, 11, 64);
+  border-radius: 100px / 50px;
+}
+
+.contentBG{
+  z-index: 0;
+  position: absolute;
+  top: 860;
+  left: 100;
+  margin: 50 350 0 110;
+  width: 1500px;
+  height: 950px;
+}
+
+h3{
+  z-index: 2;
+  color: white;
+  font-family: Balsamiq Sans;
+  font-size: 26px;
+  word-spacing: 6px;
+  letter-spacing: 2px;
+  position: relative;
+  top: 150;
+  left: 200;
+  margin: 0 330 0 120;
+  padding: 0 230 0 260;
+}
+
+.contentImg1{
+  z-index: 2;
+  position: relative;
+  width: 250;
+  height: 250;
+  margin: 180 0 0 630;
+}
+
+.contentImg2{
+  z-index: 2;
+  position: relative;
+  top: 140;
+  width: 250;
+  height: 250;
+  margin: 0 300 0 200;
+}
+
+.contentImg3{
+  z-index: 2;
+  position: relative;
+  width: 350;
+  height: 250;
+  margin: 80 0 0 350;
+}
+
+.contentImg4{
+  z-index: 2;
+  position: relative;
+  top: 200;
+  width: 450;
+  height: 300;
+  margin: 0 50 0 470;
+}
+
+footer{
+  position: relative;
+  top:300;
+  left: 800;
+  color: white;
+  font-size: 26px;
+  font-family: Balsamiq Sans;
 }
