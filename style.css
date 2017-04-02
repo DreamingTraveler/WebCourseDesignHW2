@@ -20,21 +20,48 @@ body{
   src: url(fonts/BalsamiqSansRegular.ttf);
 }
 
-span{
+h1{
   text-align: center;
   font-family: Balsamiq SansBoldItalic, sans-serif;
   font-size: 73px;
   position:absolute;
-  top: 88;
+  top: 38;
   left: 570;
   color: rgb(1, 1, 1);
   padding: 50 500 0 0;
+  -webkit-animation-name: change-color;
+  -webkit-animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change-color;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
 
+@-webkit-keyframes change-color{
+  0%  {color: rgba(215, 40, 23, 0.66);}
+  15%  {color rgba(196, 121, 21, 0.76);}
+  30%  {color: rgba(227, 220, 49, 0.82);}
+  45%  {color: rgba(158, 224, 66, 0.76);}
+  60%  {color: rgba(40, 167, 214, 0.89);}
+  75%  {color: rgba(28, 41, 209, 0.79);}
+  90%  {color: rgba(84, 44, 134, 0.88);}
+  100%  {color: rgba(134, 9, 88, 0.84);}
+}
+
+@keyframes change-color {
+  0%  {color: rgba(215, 40, 23, 0.66);}
+  15%  {color rgba(196, 121, 21, 0.76);}
+  30%  {color: rgba(227, 220, 49, 0.82);}
+  45%  {color: rgba(158, 224, 66, 0.76);}
+  60%  {color: rgba(40, 167, 214, 0.89);}
+  75%  {color: rgba(28, 41, 209, 0.79);}
+  90%  {color: rgba(84, 44, 134, 0.88);}
+  100%  {color: rgba(134, 9, 88, 0.84);}
 }
 
 .headerBG{
   padding: 30px 0 0 300px;
-  width: 1300px;
+  width: 1330px;
   height: 750px;
 }
 
@@ -57,6 +84,21 @@ li{
   margin: 0 50 0 50;
   background-color: rgb(39, 11, 64);
   border-radius: 100px / 50px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 20 20 12px transparent;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+li:hover, li:focus, li:active {
+  color: black;
+  background-color: rgb(191, 209, 46);
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 #bt1{
@@ -95,7 +137,7 @@ li{
   top: 860;
   left: 100;
   margin: 50 0 0 110;
-  width: 1500px;
+  width: 1530px;
   height: 950px;
 }
 
@@ -118,7 +160,7 @@ h3{
   position: relative;
   width: 200;
   height: 200;
-  padding: 120 0 0 670;
+  margin: 120 0 0 670;
 }
 
 .contentImg2{
@@ -147,6 +189,20 @@ h3{
   width: 400;
   height: 270;
 }
+
+
+#button {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#button:hover{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
 
 footer{
   position: relative;
