@@ -1,0 +1,32 @@
+body{
+  background-image: url("image/art.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Balsamiq Sans;
+  src: url(fonts/BalsamiqSansBoldItalic.ttf);
+}
+
+span{
+  text-align: center;
+  font-family: Balsamiq Sans, sans-serif;
+  font-size: 60px;
+  position:absolute;
+  top: 88;
+  left: 360;
+  color: rgb(1, 1, 1);
+  padding: 50 315 0 0;
+
+}
+
+.headerBG{
+  padding: 30px 100px 0px 100px;
+}
+
+li{
+  display: inline-block;
+}
