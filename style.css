@@ -20,15 +20,31 @@ body{
   src: url(fonts/BalsamiqSansRegular.ttf);
 }
 
+
+.headerBG{
+  width: 1260;
+  height: 730;
+  z-index: -1;
+  position: absolute;
+  top: 50;
+  left: 330;
+}
+
+.main{
+  z-index: 1;
+}
+
 h1{
+  /*background-position: center;*/
   text-align: center;
   font-family: Balsamiq SansBoldItalic, sans-serif;
   font-size: 73px;
-  position:absolute;
-  top: 38;
-  left: 570;
+  margin: 0 100 0 300;
+  padding: 50 200 100 300;
+  width: 80%;
   color: rgb(1, 1, 1);
-  padding: 50 500 0 0;
+
+  /*padding: 0 500 0 20;*/
   -webkit-animation-name: change-color;
   -webkit-animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
@@ -57,18 +73,6 @@ h1{
   75%  {color: rgba(28, 41, 209, 0.79);}
   90%  {color: rgba(84, 44, 134, 0.88);}
   100%  {color: rgba(134, 9, 88, 0.84);}
-}
-
-.headerBG{
-  padding: 30px 0 0 300px;
-  width: 1330px;
-  height: 750px;
-}
-
-ul{
-  position: absolute;
-  top: 500;
-  left: 300;
 }
 
 li{
@@ -101,34 +105,36 @@ li:hover, li:focus, li:active {
   transform: scale(1.2);
 }
 
+ul{
+  margin-left: 100;
+}
+
 #bt1{
-  position: relative;
-  bottom: 190;
-  right: 30;
+  margin: 0 150 200 150;
+  padding: 0 150 200 0;
 }
 
 #bt2{
-  position: relative;
-  bottom: 60;
-  right: 70;
+  margin: 200 0 0 300;
+  padding: 200 0 0 100;
 }
 
 #bt3{
-  position: relative;
-  top: 30;
-  right: 80;
+  margin: 200 0 0 600;
+  padding-left: 100;
 }
 
 #bt4{
   position: relative;
-  bottom: 70;
-  right: 80;
+  bottom: 160;
+  margin: 0 0 0 970;
+
 }
 
 #bt5{
   position: relative;
-  bottom: 190;
-  right: 100;
+  bottom: 340;
+  margin: 0 0 0 1200;
 }
 
 .contentBG{
@@ -207,7 +213,7 @@ h3{
 footer{
   position: relative;
   top: 90;
-  left: 810;
+  left: 880;
   color: white;
   font-size: 26px;
   font-family: Balsamiq Sans;
